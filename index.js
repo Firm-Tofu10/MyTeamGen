@@ -128,7 +128,7 @@ const bootStrap = () => {
     let managerCards = ""
     for (let i = 0; i < managerList.length; i++) {
         managerCards += `<div class="card" style="width: 18rem;">
-            <h4 class="card-title bg-primary text-center">Manager</h4>
+            <h4 class="card-title bg-danger text-center">Manager</h4>
             <div class="card-body">
               <h5 class="card-title">${managerList[i].name}</h5>
               <p class="card-text">${managerList[i].id}</p>
@@ -140,7 +140,7 @@ const bootStrap = () => {
     let internCards = ""
     for (let i = 0; i < internList.length; i++) {
         internCards += `<div class="card" style="width: 18rem;">
-            <h4 class="card-title bg-primary-success text-center">Intern</h4>
+            <h4 class="card-title bg-success text-center">Intern</h4>
             <div class="card-body">
               <h5 class="card-title">${internList[i].name}</h5>
               <p class="card-text">${internList[i].id}</p>
@@ -170,15 +170,14 @@ const bootStrap = () => {
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     </head>
     <body>
-    <header><h1>TEAM Profile </h1></header>
-    <section class="d-flex flex-wrap">
+    <header class="bg-warning><h1>TEAM Profile </h1></header>
+    <section class="container d-flex flex-wrap">
     ${managerCards}
     </section>
-    <section class="d-flex flex-wrap">
-
+    <section class="container d-flex flex-wrap">
     ${engineerCards}
     </section>
-    <section class="d-flex flex-wrap">
+    <section class="container d-flex flex-wrap">
     ${internCards}
     </section>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
