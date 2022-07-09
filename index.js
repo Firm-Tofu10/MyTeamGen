@@ -3,10 +3,10 @@ const Intern = require("./Lib/Intern");
 const Engineer = require("./Lib/Engineer");
 const inquirer = require("inquirer")
 let managerList = []
-let interList = []
+let internList = []
 let engineerList = []
 
-const boss = () => {
+const addBoss = () => {
     console.log("");
     inquirer.prompt([
         {
@@ -32,6 +32,7 @@ const boss = () => {
     ]).then(({ employeeName, employeeID, eMail, officeNumber }) => {
         const newHire = new Manager(employeeName, employeeID, eMail, officeNumber)
         managerList.push(newHire);
+        question()
     })
 }
 
@@ -40,7 +41,7 @@ const question = () => {
         {
             type: "list",
             name: "choices",
-            choices: ["Add Engineer", "Add Intern", "Exit App"],
+            choices: ["Add Engineer", "Add Manager", "Add Intern", "Exit App"],
             message: ":Role Choices"
         }
     ]).then(({choices }) => {
@@ -51,6 +52,9 @@ const question = () => {
         case "Add Intern":
             addIntern();
             break;
+            case "Add Manager":
+                addBoss();
+                break;
         default:
             console.log(managerList,internList,engineerList)
             process.exit(0)
@@ -85,6 +89,7 @@ const addIntern = () => {
     ]).then(({ employeeName, employeeID, eMail, schoolName }) => {
         const newHire = new Intern(employeeName, employeeID, eMail, schoolName)
         internList.push(newHire);
+        question()
     })
 }
 
@@ -114,5 +119,8 @@ const addEngineer = () => {
     ]).then(({ employeeName, employeeID, eMail, githubName }) => {
         const newHire = new Engineer(employeeName, employeeID, eMail, githubName)
         engineerList.push(newHire);
+        question()
     })
 }
+
+question()
