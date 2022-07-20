@@ -171,8 +171,8 @@ const bootStrap = () => {
     </head>
     <body>
     <header class="bg-warning><h1>TEAM Profile </h1></header>
-    <section class="container d-flex flex-wrap">
     ${managerCards}
+    <section class="container d-flex flex-wrap">
     </section>
     <section class="container d-flex flex-wrap">
     ${engineerCards}
