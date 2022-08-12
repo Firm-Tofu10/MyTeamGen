@@ -18,7 +18,7 @@ test("Test Engineer Object name attribute",function(){
 
   test("Test Engineer Object Email attribute",function(){
     const testManager = new Manager("Bryson",123,"test@gmail.com",321);
-    expect(testManager.Email).toBe("test@gmail.com");
+    expect(testManager.email).toBe("test@gmail.com");
   })
 
   test("Test Engineer Object officeNumber attribute",function(){

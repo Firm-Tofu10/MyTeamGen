@@ -13,16 +13,16 @@ test("Test Intern Object name attribute",function(){
 
   test("Test Intern Object ID attribute",function(){
     const testIntern = new Intern("Bryson",123,"test@gmail.com","Firm-Tofu10");
-    expect(testIntern.name).toBe(123);
+    expect(testIntern.id).toBe(123);
   })
 
   test("Test Intern Object Email attribute",function(){
     const testIntern = new Intern("Bryson",123,"test@gmail.com","Firm-Tofu10");
-    expect(testIntern.name).toBe("test@gmail.coms");
+    expect(testIntern.email).toBe("test@gmail.com");
   })
 
   test("Test Intern Object schoolName attribute",function(){
     const testIntern = new Intern("Bryson",123,"test@gmail.com","schoolName");
-    expect(testIntern.name).toBe("schoolName");
+    expect(testIntern.schoolName).toBe("schoolName");
   })
   
