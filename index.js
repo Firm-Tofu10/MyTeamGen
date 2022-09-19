@@ -127,7 +127,7 @@ const addEngineer = () => {
 const bootStrap = () => {
     let managerCards = ""
     for (let i = 0; i < managerList.length; i++) {
-        managerCards += `<div class="card" style="width: 18rem;">
+        managerCards += `<div id="ma" class="card" style="width: 18rem;">
             <h4 class="card-title bg-danger text-center">Manager</h4>
             <div class="card-body">
               <h5 class="card-title">${managerList[i].name}</h5>
@@ -139,7 +139,7 @@ const bootStrap = () => {
     }
     let internCards = ""
     for (let i = 0; i < internList.length; i++) {
-        internCards += `<div class="card" style="width: 18rem;">
+        internCards += `<div id="in" class="card" style="width: 18rem;">
             <h4 class="card-title bg-success text-center">Intern</h4>
             <div class="card-body">
               <h5 class="card-title">${internList[i].name}</h5>
@@ -151,7 +151,7 @@ const bootStrap = () => {
     }
     let engineerCards = ""
     for (let i = 0; i < engineerList.length; i++) {
-        engineerCards += `<div class="card" style="width: 18rem;">
+        engineerCards += `<div id="en" class="card" style="width: 18rem;">
             <h4 class="card-title bg-primary text-center">Engineer</h4>
             <div class="card-body">
               <h5 class="card-title">${engineerList[i].name}</h5>
@@ -167,19 +167,22 @@ const bootStrap = () => {
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Bootstrap demo</title>
+			<link rel="styles.css" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     </head>
-    <body>
+    <body id="main">
     <header class="bg-warning><h1>TEAM Profile </h1></header>
-    ${managerCards}
-    <section class="container d-flex flex-wrap">
+		<div id="con">
+		<section>
+		${managerCards}
     </section>
-    <section class="container d-flex flex-wrap">
+    <section>
     ${engineerCards}
     </section>
-    <section class="container d-flex flex-wrap">
+    <section>
     ${internCards}
     </section>
+		<div>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     </body>
   </html>`
