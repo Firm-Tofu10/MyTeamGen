@@ -42,14 +42,23 @@
 #ma {
 margin-left: 5%;
 margin-right: 5%;
+border-radius: 50px; 
+	border-color: white;
+	border-style:solid
 }
 
 #en {
 	margin-left: 5%;
 	margin-right: 5%;
+	border-radius: 50px; 
+	border-color: white;
+	border-style:solid
 }
 
 #in {
 	margin-left: 5.7%;
 	margin-right: 5.7%;
+	border-radius: 50px; 
+	border-color: white;
+	border-style:solid
 }
