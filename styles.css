@@ -45,7 +45,7 @@
 #ma {
 margin-left: 5%;
 margin-right: 5%;
-border-radius: 50px; 
+border-radius: 25px; 
 	border-color: white;
 	border-style:solid
 }
@@ -53,7 +53,7 @@ border-radius: 50px;
 #en {
 	margin-left: 5%;
 	margin-right: 5%;
-	border-radius: 50px; 
+	border-radius: 25px; 
 	border-color: white;
 	border-style:solid
 }
@@ -61,7 +61,7 @@ border-radius: 50px;
 #in {
 	margin-left: 5.7%;
 	margin-right: 5.7%;
-	border-radius: 50px; 
+	border-radius: 25px; 
 	border-color: white;
 	border-style:solid
 }
