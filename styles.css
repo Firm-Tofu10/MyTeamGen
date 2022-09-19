@@ -17,7 +17,7 @@
 #con {
 	color:SeaShell;
 	/* background-Color: MidnightBlue; */
-	/* justify-content: center; */
+	justify-content: center;
 	display: flex;
 	margin-top: 80px;
 }
