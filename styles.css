@@ -6,10 +6,20 @@
   font-size: 30px;
 }
 
-.card {
-	background-Color: MidnightBlue;
-	justify-content: center;
+#man {
+	color:SeaShell;
+	/* background-Color: MidnightBlue; */
+	/* justify-content: center; */
 	display: flex;
+	margin-top: 80px;
+}
+
+#con {
+	color:SeaShell;
+	/* background-Color: MidnightBlue; */
+	/* justify-content: center; */
+	display: flex;
+	margin-top: 80px;
 }
 
 #main {
