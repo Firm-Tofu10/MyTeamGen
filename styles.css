@@ -29,3 +29,27 @@
 #title {
 	text-align: center;
 }
+
+#pic {
+	width:60%;
+	height: 700px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1.5%;
+}
+
+#ma {
+margin-left: 5%;
+margin-right: 5%;
+}
+
+#en {
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+#in {
+	margin-left: 5.7%;
+	margin-right: 5.7%;
+}
