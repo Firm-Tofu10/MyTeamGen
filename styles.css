@@ -6,7 +6,7 @@
   font-size: 30px;
 }
 
-#con {
+.con {
 	color:SeaShell;
 	/* background-Color: MidnightBlue; */
 	justify-content: center;
@@ -14,7 +14,7 @@
 	margin-top: 80px;
 }
 
-#main {
+.main {
 	background-Color: DarkSlateGrey; 
 }
 

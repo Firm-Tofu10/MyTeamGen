@@ -167,12 +167,13 @@ const bootStrap = () => {
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Bootstrap demo</title>
+			<link rel="styles.css" href="styles.css">
 			<link rel="styles.css" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     </head>
-    <body id="main">
-    <header class="bg-warning><h1>TEAM Profile </h1></header>
-		<div id="con">
+    <body style="background-color:DarkSlateGrey;" class="main">
+    <header style="padding:60px;","text-align:center;","background:black;","color:white;","font-size:30px;"><h1>TEAM Profile </h1></header>
+		<div style="justify-content:center;", "display:flex;","margin-top: 80px;", class="con">
 		<section>
 		${managerCards}
     </section>
@@ -183,6 +184,9 @@ const bootStrap = () => {
     ${internCards}
     </section>
 		<div>
+		<div>
+				<img style="margin-left: auto;","margin-right: auto;","margin-top: 1.5%;","border-radius: 50px;","border-color: black;","border-style:solid;","width:60%;","height:700px;" id="pic" src="marvin-meyer-SYTO3xs06fU-unsplash.jpg" alt="marvin-meyer-SYTO3xs06fU-unsplash.jpg">
+			</div>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     </body>
   </html>`
