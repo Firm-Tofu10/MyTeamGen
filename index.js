@@ -129,10 +129,10 @@ const bootStrap = () => {
     for (let i = 0; i < managerList.length; i++) {
         managerCards += `<div id="ma" class="card" style="width: 18rem;">
             <h4 class="card-title bg-danger text-center">Manager</h4>
-            <div class="card-body">
-              <h5 class="card-title">${managerList[i].name}</h5>
-              <p class="card-text">${managerList[i].id}</p>
-              <p class="card-text">${managerList[i].officeNumber}</p>
+            <div class="card-body;border-radius: 40px;border-color: black;border-style: solid;">
+              <h5 class="card-title">Name:${managerList[i].name}</h5>
+              <p class="card-text">Manager ID:${managerList[i].id}</p>
+              <p class="card-text">Office Number:${managerList[i].officeNumber}</p>
               <a href="mailto:${managerList[i].email}" class="btn btn-primary">Email</a>
               </div>
           </div>`
@@ -141,11 +141,11 @@ const bootStrap = () => {
     for (let i = 0; i < internList.length; i++) {
         internCards += `<div id="in" class="card" style="width: 18rem;">
             <h4 class="card-title bg-success text-center">Intern</h4>
-            <div class="card-body">
-              <h5 class="card-title">${internList[i].name}</h5>
-              <p class="card-text">${internList[i].id}</p>
-              <a href="mailto:${internList[i].email}" class="btn btn-primary">Email</a>
-              <p class="card-text">${internList[i].schoolName}</p>
+            <div class="card-body;border-radius: 40px;border-color: black;border-style: solid;">
+              <h5 class="card-title">Name:${internList[i].name}</h5>
+              <p class="card-text">Employee ID:${internList[i].id}</p>
+              <p class="card-text">School Name:${internList[i].schoolName}</p>
+							<a href="mailto:${internList[i].email}" class="btn btn-primary">Email</a>
             </div>
           </div>`
     }
@@ -153,10 +153,10 @@ const bootStrap = () => {
     for (let i = 0; i < engineerList.length; i++) {
         engineerCards += `<div id="en" class="card" style="width: 18rem;">
             <h4 class="card-title bg-primary text-center">Engineer</h4>
-            <div class="card-body">
-              <h5 class="card-title">${engineerList[i].name}</h5>
-              <p class="card-text">${engineerList[i].id}</p>
-              <p class="card-text">${engineerList[i].github}</p>
+            <div class="card-body;border-radius: 40px;border-color: black;border-style: solid;">
+              <h5 class="card-title">Name:${engineerList[i].name}</h5>
+              <p class="card-text">Employee ID:${engineerList[i].id}</p>
+							<p class="card-text">GitHub:${engineerList[i].github}</p>
               <a href="mailto:${engineerList[i].email}" class="btn btn-primary">Email</a>
             </div>
           </div>`
@@ -172,23 +172,25 @@ const bootStrap = () => {
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     </head>
     <body style="background-color:DarkSlateGrey;" class="main">
-    <header style="padding:60px;","text-align:center;","background:black;","color:white;","font-size:30px;"><h1>TEAM Profile </h1></header>
-		<div style="justify-content:center;", "display:flex;","margin-top: 80px;", class="con">
-		<section>
+    <header style="padding:60px;text-align:center;background:black;color:white;font-size:30px;"><h1>TEAM Profile </h1></header>
+		<div>
+		<div style="justify-content:center;display:flex;margin-top: 80px;">
+		<section style="margin-left: 8px;margin-right: 8px;border-radius: 140px;border-color: black;border-style: solid;">
 		${managerCards}
     </section>
-    <section>
+    <section style="margin-left: 8px;margin-right: 8px;border-radius: 140px;border-color: black;border-style: solid;">
     ${engineerCards}
-    </section>
-    <section>
+    </section >
+    <section style="margin-left: 8px;margin-right: 8px;border-radius: 140px;border-color: black;border-style: solid;">
     ${internCards}
     </section>
+		</div>
 		<div>
-		<div>
-				<img style="margin-left: auto;","margin-right: auto;","margin-top: 1.5%;","border-radius: 50px;","border-color: black;","border-style:solid;","width:60%;","height:700px;" id="pic" src="marvin-meyer-SYTO3xs06fU-unsplash.jpg" alt="marvin-meyer-SYTO3xs06fU-unsplash.jpg">
-			</div>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     </body>
+		<div>
+				<img style="display:flex;width: 60%;height: 700px;margin-left: auto;margin-right: auto;margin-top: 1.5%;border-radius: 140px;border-color: black;border-style: solid;" id="pic" src="marvin-meyer-SYTO3xs06fU-unsplash.jpg" alt="marvin-meyer-SYTO3xs06fU-unsplash.jpg">
+			</div>
   </html>`
     fs.writeFileSync("index.html", html, function (err) {
         if (err) throw err;
